@@ -1,0 +1,22 @@
+<template>
+  <!--首页头部-->
+  <header class="header">
+    <slot name="left"></slot>
+    <span class="header_title">
+            <span class="header_title_text ellipsis">{{title}}</span>
+    </span>
+    <slot class="right"></slot>
+  </header>
+</template>
+
+<script>
+    export default {
+       props:{
+         title:String
+       }
+    }
+</script>
+
+<style lang="stylus" rel="stylesheet/stylus">
+  @import "../../common/stylus/HeaderTop.styl";
+</style>
